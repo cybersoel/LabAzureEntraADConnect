@@ -73,7 +73,7 @@
 5
 <p align="center">
 <br/>
-<img width="597" alt="Portfolio" src="https://i.imgur.com/MptZjMq.png">
+<img width="597" alt="Portfolio" src="https://i.imgur.com/OwsoDqd.png">
 <br />
 <br />
 <br />
