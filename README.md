@@ -83,7 +83,7 @@
 6
 <p align="center">
 <br/>
-<img width="597" alt="Portfolio" src="https://i.imgur.com/Qwyw7vf.png">
+<img width="650" alt="Portfolio" src="https://i.imgur.com/Qwyw7vf.png">
 <br />
 <br />
 <br />
@@ -93,7 +93,7 @@
 7
 <p align="center">
 <br/>
-<img width="597" alt="Portfolio" src="https://i.imgur.com/oczX9m2.png">
+<img width="650" alt="Portfolio" src="https://i.imgur.com/oczX9m2.png">
 <br />
 <br />
 <br />
