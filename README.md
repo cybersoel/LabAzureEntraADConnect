@@ -104,7 +104,7 @@
 8
 <p align="center">
 <br/>
-<img width="597" alt="Portfolio" src="https://i.imgur.com/sOoMvez.png">
+<img width="650" alt="Portfolio" src="https://i.imgur.com/sOoMvez.png">
 <br />
 <br />
 <br />
