@@ -16,11 +16,35 @@
 <br />
 <br />
 
+Additionally to the diagram above, we will practice Desynchronization between the domain controller and the Azure AD.
+
+
 ---
 <a name="toc"></a>
 **Table of Contents:**
 
-- 
+- [Creating a New Resource Group](#creating-a-new-resource-group)
+- [Creating a Virtual Network](#creating-a-virtual-network)
+- [Create a First Domain Controller VM](#create-a-first-domain-controller)
+- [Connect to DC01 via RDP](#connect-to-dc01-via-rdp)
+- [DC01 Disk Configuration](#dc01-disk-configuration)
+- [Installing Active Directory Domain Service](#installing-active-directory-domain-service)
+- [Setting up Domain](#setting-up-domain)
+- [Setting up Custom DNS Server viz Azure](#setting-up-custom-dns-server)
+- [Setting up the second Domain Controller VM](#setting-up-the-second-domain-controller-vm)
+- [DC02 Network Configuration](#dc02-network-configuration)
+- [DC01 and DC02 syncing via ADSS](#dc01-and-dc02-syncing-via-adss)
+- [DC01 and DC02 syncing via ADUC](#dc01-and-dc02-syncing-via-aduc)
+- [Downloading Microsoft Azure AD Connect](#downloading-microsoft-azure-ad-connect)
+- [Installing Azure AD connect to DC01](#installing-azure-ad-connect-to-dc01)
+- [Checking sync status via Azure Portal](#checking-sync-status-via-azure-portal)
+- [Force syncing with PowerShell](#forcing-syncing-with-powershell)
+- [Disabling Synchronization](#disabling-synchronization)
+- [Verifying Desynchronization](#verifying-desynchronization)
+- [Uninstalling Azure AD connect](#uninstalling-azure-ad-connect)
+
+
+
 
 ---
 
