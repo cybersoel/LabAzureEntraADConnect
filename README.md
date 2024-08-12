@@ -25,7 +25,7 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 - [Creating a New Resource Group](#creating-a-new-resource-group)
 - [Creating a Virtual Network](#creating-a-virtual-network)
-- [Create a First Domain Controller VM](#create-a-first-domain-controller)
+- [Creating a First Domain Controller VM](#creating-a-first-domain-controller-vm)
 - [Connect to DC01 via RDP](#connect-to-dc01-via-rdp)
 - [DC01 Disk Configuration](#dc01-disk-configuration)
 - [Installing Active Directory Domain Service](#installing-active-directory-domain-service)
@@ -114,7 +114,7 @@ Additionally to the diagram above, we will practice Desynchronization between th
 ---
 
 [back to top](#toc)
-## Create a First Domain Controller VM
+## Creating a First Domain Controller VM
 
 <br />
 <br />
