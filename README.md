@@ -30,7 +30,7 @@ Additionally to the diagram above, we will practice Desynchronization between th
 - [DC01 Disk Configuration](#dc01-disk-configuration)
 - [Installing Active Directory Domain Service](#installing-active-directory-domain-service)
 - [Setting up Domain](#setting-up-domain)
-- [Setting up Custom DNS Server viz Azure](#setting-up-custom-dns-server)
+- [Setting up Custom DNS Server via Azure](#setting-up-custom-dns-server-via-azure)
 - [Setting up the second Domain Controller VM](#setting-up-the-second-domain-controller-vm)
 - [DC02 Network Configuration](#dc02-network-configuration)
 - [DC01 and DC02 syncing via ADSS](#dc01-and-dc02-syncing-via-adss)
