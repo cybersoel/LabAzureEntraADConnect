@@ -55,6 +55,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## Creating a New Resource Group
 
 <br />
@@ -70,6 +72,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Creating a Virtual Network
 
 <br />
@@ -108,6 +112,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Create a First Domain Controller VM
 
 <br />
@@ -165,6 +171,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Connect to DC01 via RDP
 
 <br />
@@ -202,6 +210,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## DC01 Disk Configuration
 
 <br />
@@ -261,6 +271,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Installing Active Directory Domain Service
 
 <br />
@@ -299,6 +311,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Setting up Domain
 
 <br />
@@ -386,6 +400,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## Setting up Custom DNS Server viz Azure
 
 <br />
@@ -423,6 +439,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## Setting up the second Domain Controller VM
 
 
@@ -566,6 +584,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## DC02 Network Configuration
 
 <br />
@@ -605,6 +625,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## DC01 and DC02 syncing via ADSS
 
 <br />
@@ -662,6 +684,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## DC01 and DC02 syncing via ADUC
 
 
@@ -752,6 +776,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## Downloading Microsoft Azure AD Connect
 
 <br />
@@ -780,6 +806,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 
 
 ---
+
+[back to top](#toc)
 ## Installing Azure AD connect to DC01
 
 <br />
@@ -871,6 +899,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Checking sync status via Azure Portal
 
 <br />
@@ -897,6 +927,8 @@ Additionally to the diagram above, we will practice Desynchronization between th
 <br />
 
 ---
+
+[back to top](#toc)
 ## Force syncing with PowerShell
 
 <br />
@@ -926,6 +958,8 @@ Start-ADSyncSyncCycle -PolicyType Delta
 
 
 ---
+
+[back to top](#toc)
 ## Disabling Synchronization
 
 <br />
@@ -967,6 +1001,8 @@ Start-ADSyncSyncCycle -PolicyType Delta
 <br />
 
 ---
+
+[back to top](#toc)
 ## Verifying Desynchronization
 
 <br />
@@ -993,6 +1029,8 @@ Start-ADSyncSyncCycle -PolicyType Delta
 <br />
 
 ---
+
+[back to top](#toc)
 ## Uninstalling Azure AD connect
 
 <br />
