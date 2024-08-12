@@ -38,7 +38,7 @@ Additionally to the diagram above, we will practice Desynchronization between th
 - [Downloading Microsoft Azure AD Connect](#downloading-microsoft-azure-ad-connect)
 - [Installing Azure AD connect to DC01](#installing-azure-ad-connect-to-dc01)
 - [Checking sync status via Azure Portal](#checking-sync-status-via-azure-portal)
-- [Force syncing with PowerShell](#forcing-syncing-with-powershell)
+- [Force syncing with PowerShell](#force-syncing-with-powershell)
 - [Disabling Synchronization](#disabling-synchronization)
 - [Verifying Desynchronization](#verifying-desynchronization)
 - [Uninstalling Azure AD connect](#uninstalling-azure-ad-connect)
