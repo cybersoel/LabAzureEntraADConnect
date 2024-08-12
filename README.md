@@ -24,18 +24,19 @@
 
 ---
 
----
 
 <h4>Tip: Any configuration options not mentioned in the walkthrough can be left at their default settings</h4>
 
----
 
 
 
 ---
+## Creating a New Resource Group
 
-2
+<br />
+<br />
 
+ - Create a new resource group named "AD-LAB".
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/Pbhwlqj.png">
@@ -44,9 +45,14 @@
 <br />
 <br />
 
+---
+## Creating a Virtual Network
+
+<br />
+<br />
 
 
-3
+ - Create a new virtual network called "OnPremNetwork" to simulate on-premises network.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/W0XN2BF.png">
@@ -57,9 +63,7 @@
 
 
 
-
-
-4
+ - Disable all security features. Set IP addresses to 10.0.0.0/16 and subnet to 10.0.1.0/24.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/dsxbZRB.png">
@@ -70,7 +74,7 @@
 
 
 
-5
+ - Name the virtual machine "DC01". Create a new Availability Set with default settings.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/OwsoDqd.png">
@@ -79,8 +83,13 @@
 <br />
 <br />
 
+---
+## Create a First Domain Controller VM
 
-6
+<br />
+<br />
+
+ - Choose Windows Server 2022 Hot Patched with 2 vcpus & 8 GiB memory. Set username: dc01admin, password: Passwordforlab!1
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/Qwyw7vf.png">
@@ -90,7 +99,7 @@
 <br />
 
 
-7
+ - Use HDD Standard default setting for OS disk.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/oczX9m2.png">
@@ -101,7 +110,7 @@
 
 
 
-8
+ - Create a new 10 GiB Standard HDD data disk for AD installation.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/sOoMvez.png">
@@ -111,7 +120,7 @@
 <br />
 
 
-9
+ - Leave networking settings as default.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/95bxGOK.png">
@@ -122,7 +131,7 @@
 
 
 
-10
+ - Disable Boot diagnostic. Review and create VM.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/N88TgOf.png">
@@ -131,8 +140,14 @@
 <br />
 <br />
 
+---
+## Connect to DC01 via RDP
 
-11
+<br />
+<br />
+
+
+ - After deployment, go to resource.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/OsN8cFO.png">
@@ -143,7 +158,7 @@
 
 
 
-12
+ - Connect and download RDP client. Open file and connect using your credentials.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/S26OUlD.png">
@@ -153,7 +168,7 @@
 <br />
 
 
-13
+ - Right-click client and enable Smart Sizing.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/CtRmkdx.png">
@@ -162,8 +177,13 @@
 <br />
 <br />
 
+---
+## DC01 Disk Configuration
 
-14
+<br />
+<br />
+
+ - In Server Manager, go to Tools - Computer Management.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/NlRaF1H.png">
@@ -173,7 +193,7 @@
 <br />
 
 
-15
+ - Initialize disk as MBR when prompted in Disk Management.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/qY2Kj20.png">
@@ -186,7 +206,7 @@
 
 
 
-16
+ - Quick format Disk 2. Create new simple volume.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/GoaSY5C.png">
@@ -196,7 +216,7 @@
 <br />
 
 
-17
+ - Assign drive letter F:.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/Gd6M8mH.png">
@@ -207,7 +227,7 @@
 
 
 
-18
+ - Complete formatting.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/r2rresX.png">
@@ -216,9 +236,14 @@
 <br />
 <br />
 
+---
+## Installing Active Directory Domain Service
+
+<br />
+<br />
 
 
-19
+ - Add roles and features. Select role-based or feature-based installation.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/kMtkTkI.png">
@@ -230,7 +255,7 @@
 
 
 
-20
+ - Choose DC01 server.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/dnE0gbo.png">
@@ -240,7 +265,7 @@
 <br />
 
 
-21
+ - Select ADDS. Install
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/xSPFLvC.png">
@@ -249,12 +274,14 @@
 <br />
 <br />
 
+---
+## Setting up Domain
+
+<br />
+<br />
 
 
-
-
-
-22
+ - Set up domain.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/W2wbF20.png">
@@ -268,7 +295,7 @@
 
 
 
-23
+ - Add forest and set domain name.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/VAwZmBq.png">
@@ -282,7 +309,7 @@
 
 
 
-24
+ - Set DSRM password.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/NXVb0QF.png">
@@ -296,7 +323,7 @@
 
 
 
-25
+ - Change default drive from C to F.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/kz4GxHd.png">
@@ -310,7 +337,7 @@
 
 
 
-26
+ - Install and reboot VM.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/twQkyXf.png">
@@ -324,7 +351,7 @@
 
 
 
-27
+ - Verify domain installation in Active Directory Users and Computers.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/qnuVfiW.png">
@@ -334,11 +361,14 @@
 <br />
 
 
+---
+## Setting up Custom DNS Server viz Azure
+
+<br />
+<br />
 
 
-
-
-28
+ - Go to DC01 Network setting. Select Network adapter.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/s5GPDxQ.png">
@@ -348,11 +378,7 @@
 <br />
 
 
-
-
-
-
-29
+ - In IP configurations, change [ipconfig1] to static IP.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/UhckuwA.png">
@@ -362,11 +388,7 @@
 <br />
 
 
-
-
-
-
-30
+ - In OnPremNetwork, set custom DNS server to DC01's private IP.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/DrGjcML.png">
@@ -376,11 +398,12 @@
 <br />
 
 
+---
+## Setting up the second Domain Controller VM
 
 
 
-
-31
+ - Create second domain controller following first DC's settings.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/bNaIeb6.png">
@@ -391,10 +414,7 @@
 
 
 
-
-
-
-32
+ - Create VM.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/ooCkZiW.png">
@@ -404,11 +424,7 @@
 <br />
 
 
-
-
-
-
-33
+ - Connect to DC02 via RDP. Set up Disk Management (MBR, Simple volume, F:).
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/HFXyAMs.png">
@@ -419,10 +435,7 @@
 
 
 
-
-
-
-34
+ - Install Active Directory.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/23wvvlT.png">
@@ -435,8 +448,7 @@
 
 
 
-
-35
+ - Use default settings unless specified.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/kUCx1HZ.png">
@@ -449,8 +461,7 @@
 
 
 
-
-36
+ - Add domain controller to existing domain. Provide admin credentials (Domain\User).
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/lVYz6Od.png">
@@ -464,7 +475,7 @@
 
 
 
-37
+ - Set DSRM password.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/5c8CKqU.png">
@@ -478,7 +489,7 @@
 
 
 
-38
+ - Duplicate additional options from DC01.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/DvEtdPJ.png">
@@ -492,7 +503,7 @@
 
 
 
-39
+ - Change paths from C: to F: drive.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/X6Mcvm5.png">
@@ -506,7 +517,7 @@
 
 
 
-40
+ - Install and reboot VM.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/12sFuMd.png">
@@ -520,7 +531,7 @@
 
 
 
-41
+ - Log in to DC02 with DC01 admin account. Verify both DCs in Domain Controllers OU.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/GadtmoA.png">
@@ -530,11 +541,13 @@
 <br />
 
 
+---
+## DC02 Network Configuration
 
+<br />
+<br />
 
-
-
-42
+ - Go to DC02 Network setting and Network adapter.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/8bBNb4z.png">
@@ -545,10 +558,7 @@
 
 
 
-
-
-
-43
+ - Change [ipconfig1] to static IP.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/J7GF0Er.png">
@@ -560,9 +570,7 @@
 
 
 
-
-
-44
+ - Add DC02's private IP to OnPremNetwork DNS settings.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/cudub4I.png">
@@ -572,11 +580,13 @@
 <br />
 
 
+---
+## DC01 and DC02 syncing via ADSS
 
+<br />
+<br />
 
-
-
-45
+ - In DC01, rename [Default-First-Site-Name] to [OnPrem] in Active Directory Sites and Services.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/qL1xOOC.png">
@@ -587,10 +597,7 @@
 
 
 
-
-
-
-46
+ - Create new subnet.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/T7s5Har.png">
@@ -600,11 +607,7 @@
 <br />
 
 
-
-
-
-
-47
+ - Copy Virtual Network subnet from Azure portal.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/UlxTgQk.png">
@@ -614,11 +617,7 @@
 <br />
 
 
-
-
-
-
-48
+ - Paste subnet prefix and associate with OnPrem network.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/128pqr8.png">
@@ -628,11 +627,7 @@
 <br />
 
 
-
-
-
-
-49
+ - Verify configuration in left pane.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/rZi4c5D.png">
@@ -642,11 +637,12 @@
 <br />
 
 
+---
+## DC01 and DC02 syncing via ADUC
 
 
 
-
-50
+ - Check DC01 and DC02 sync in Active Directory Users and Computers. Set directory server to DC01.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/dOlhUpS.png">
@@ -658,9 +654,7 @@
 
 
 
-
-
-51
+ - Create new OU "_USERS". Add new User.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/FN1NILr.png">
@@ -671,10 +665,7 @@
 
 
 
-
-
-
-52
+ - Name user "testuser1".
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/7b8h8ol.png">
@@ -685,10 +676,7 @@
 
 
 
-
-
-
-53
+ - Verify "testuser1" in "_USER" OU.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/7js2Mz0.png">
@@ -698,11 +686,7 @@
 <br />
 
 
-
-
-
-
-54
+ - On DC02 client, open Active Directory Users and Computers. Set Directory server to DC01.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/w483mqI.png">
@@ -713,10 +697,7 @@
 
 
 
-
-
-
-55
+ - Verify OU and User creation.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/xFSzUss.png">
@@ -726,11 +707,7 @@
 <br />
 
 
-
-
-
-
-56
+ - Change directory server to DC02.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/WCLNpLo.png">
@@ -740,11 +717,7 @@
 <br />
 
 
-
-
-
-
-57
+ - Confirm OU and user update. Dual domain controller deployment complete.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/vSlVqWj.png">
@@ -754,11 +727,14 @@
 <br />
 
 
+---
+## Downloading Microsoft Azure AD Connect
+
+<br />
+<br />
 
 
-
-
-58
+ - Sync DC01 VM with Azure AD using Entra Connect. Download from Azure portal.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/C8XgZ21.png">
@@ -769,10 +745,7 @@
 
 
 
-
-
-
-59
+ - Open downloaded file on DC01 VM.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/2uoICBS.png">
@@ -782,11 +755,15 @@
 <br />
 
 
+---
+## Installing Azure AD connect to DC01
+
+<br />
+<br />
 
 
 
-
-60
+ - Install Azure AD connect.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/DQy9yxm.png">
@@ -797,10 +774,7 @@
 
 
 
-
-
-
-61
+ - Use express settings for lab environment.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/sGKD8WN.png">
@@ -811,10 +785,7 @@
 
 
 
-
-
-
-62
+ - Provide Azure Global Admin credentials. Fix error if encountered.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/EMy4hxh.png">
@@ -824,11 +795,7 @@
 <br />
 
 
-
-
-
-
-63
+ - (only if error encountered) Run Command Prompt as admin. Navigate to Microsoft Azure Active Directory Connect folder. Execute `AzureADConnect.exe /InteractiveAuth`.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/mk0ozUK.png">
@@ -838,11 +805,7 @@
 <br />
 
 
-
-
-
-
-64
+ - Sign in with your Azure Global Admin account.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/dFZ7FoT.png">
@@ -852,11 +815,7 @@
 <br />
 
 
-
-
-
-
-65
+ - Provide on-premise local AD admin credentials.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/NMOF9Nx.png">
@@ -867,10 +826,7 @@
 
 
 
-
-
-
-66
+ - Skip UPN Suffix addition and domain verification in Azure.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/vdzpZLK.png">
@@ -881,10 +837,7 @@
 
 
 
-
-
-
-67
+ - Complete installation.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/tPFPgaf.png">
@@ -893,12 +846,14 @@
 <br />
 <br />
 
+---
+## Checking sync status via Azure Portal
+
+<br />
+<br />
 
 
-
-
-
-68
+ - Check Users in Azure AD for synchronization status.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/YA1uW2z.png">
@@ -908,11 +863,7 @@
 <br />
 
 
-
-
-
-
-69
+ - Verify sync status in Microsoft Entra Connect.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/ybsJvfT.png">
@@ -921,12 +872,26 @@
 <br />
 <br />
 
+---
+## Force syncing with PowerShell
+
+<br />
+<br />
 
 
 
 
+ - AD connect syncs every 30 minutes. Force sync with PowerShell:
 
-70
+<br />
+
+```
+Import-Module ADSync
+Start-ADSyncSyncCycle -PolicyType Delta
+```
+
+<br />
+
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/9x5awPT.png">
@@ -936,11 +901,17 @@
 <br />
 
 
+---
+## Disabling Synchronization
+
+<br />
+<br />
 
 
 
+ - Install MS online Module via PowerShell: `Install-Module MSonline`
+ - Connect the PowerShell with Azure AD: `Connect-MsolService`
 
-71
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/WsuSuU0.png">
@@ -950,11 +921,7 @@
 <br />
 
 
-
-
-
-
-72
+ - Check sync status: `(Get-MsolCompanyInformation).Directorysynchronizationenabled`
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/LWA5ewN.png">
@@ -965,10 +932,8 @@
 
 
 
-
-
-
-73
+ - Disable sync: `Set-MsolDirSyncEnabled -EnableDirSync $false`
+ - Confirm status: `(Get-MsolCompanyInformation).Directorysynchronizationenabled`
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/Xu1hNYg.png">
@@ -977,12 +942,14 @@
 <br />
 <br />
 
+---
+## Verifying Desynchronization
+
+<br />
+<br />
 
 
-
-
-
-74
+ - Verify in Azure AD.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/4Iix5v8.png">
@@ -992,11 +959,7 @@
 <br />
 
 
-
-
-
-
-75
+ - Users convert to cloud-only accounts. Delete "On-Premises Directory Synchronization Service Account".
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/AknMc3x.png">
@@ -1005,12 +968,14 @@
 <br />
 <br />
 
+---
+## Uninstalling Azure AD connect
+
+<br />
+<br />
 
 
-
-
-
-76
+ - Uninstall Microsoft AD connect from domain controller.
 <p align="center">
 <br/>
 <img width="750" alt="Portfolio" src="https://i.imgur.com/OXWTDo2.png">
@@ -1018,9 +983,6 @@
 <br />
 <br />
 <br />
-
-
-
 
 
 
