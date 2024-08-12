@@ -402,7 +402,7 @@ Additionally to the diagram above, we will practice Desynchronization between th
 ---
 
 [back to top](#toc)
-## Setting up Custom DNS Server viz Azure
+## Setting up Custom DNS Server via Azure
 
 <br />
 <br />
