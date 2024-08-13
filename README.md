@@ -7,8 +7,9 @@
 <br />
 </p>
 
+---
 
-**In addition to the diagram above, we will practice desynchronization between the domain controller and the Azure AD.**
+***In addition to the diagram above, we will practice desynchronization between the domain controller and the Azure AD.***
 
 <br />
 <br />
