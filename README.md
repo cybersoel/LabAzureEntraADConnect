@@ -1,3 +1,39 @@
+
+
+
+
+
+# Azure Entra & AD Connect: Hybrid Identity Management
+
+## Key Learnings and Skills Demonstrated
+
+- **Azure Infrastructure Setup**: Demonstrated proficiency in creating and configuring Azure resources including Resource Groups and Virtual Networks.
+
+- **Virtual Machine Management**: Showcased skills in deploying and configuring multiple Windows Server VMs in Azure, including network settings and disk management.
+
+- **Active Directory Domain Services (ADDS)**: Exhibited expertise in installing and configuring ADDS, creating forest and domains, and managing organizational units and users.
+
+- **Multi-Domain Controller Environment**: Implemented a dual domain controller setup, demonstrating understanding of redundancy and high availability in Active Directory environments.
+
+- **DNS Configuration**: Configured custom DNS settings in Azure and within the Windows Server environment, showcasing network management skills.
+
+- **PowerShell Scripting**: Utilized PowerShell for various administrative tasks, including forcing AD sync cycles and managing Azure AD synchronization.
+
+- **Azure AD Connect**: Demonstrated the ability to install, configure, and manage Azure AD Connect for hybrid identity synchronization between on-premises AD and Azure AD.
+
+- **Hybrid Identity Management**: Showcased understanding of hybrid identity concepts by setting up and managing synchronization between on-premises AD and Azure AD.
+
+- **Troubleshooting**: Displayed problem-solving skills by addressing synchronization issues and navigating complex system integrations.
+
+- **Azure Active Directory Management**: Demonstrated proficiency in managing Azure AD, including user synchronization and directory service account management.
+
+- **Network Security**: Implemented and managed network security groups and firewall settings in Azure.
+
+- **System Administration**: Exhibited broad knowledge of Windows Server administration, including server roles, features, and best practices.
+
+This project simulates a real-world scenario of setting up and managing a hybrid identity environment, bridging on-premises Active Directory with Azure AD. The skills demonstrated are directly applicable to roles in system administration, cloud infrastructure management, and identity and access management in enterprise environments. It showcases the ability to work with both traditional on-premises technologies and modern cloud-based solutions, a valuable skillset in today's IT landscape.
+
+
 <h1 align="center">Summary Diagram</h1>
 
 
